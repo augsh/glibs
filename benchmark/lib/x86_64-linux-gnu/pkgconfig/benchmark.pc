@@ -1,0 +1,12 @@
+prefix=/home/bean/work/repos/benchmark/build/install
+exec_prefix=${prefix}
+libdir=/home/bean/work/repos/benchmark/build/install/lib/x86_64-linux-gnu
+includedir=/home/bean/work/repos/benchmark/build/install/include
+
+Name: benchmark
+Description: Google microbenchmark framework
+Version: v1.8.3-60-g15769911
+
+Libs: -L${libdir} -lbenchmark
+Libs.private: -lpthread
+Cflags: -I${includedir}
